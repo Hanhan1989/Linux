@@ -1,6 +1,7 @@
 #! /bin/bash
 # Se puede tomar los argumentos del bash con $1, $2 ..$n. 
 # $#: numero de argumentos. $*: todos los argumentos
+# $*: tomar todos los argumentos
 # read: toma dato durante el proceso del script
 
 echo "Introducir nombre y apellido con un espacio"
