@@ -6,7 +6,7 @@ services:
         build:
             context: .
         volumes:
-            - /Users/hanhan/Desktop/workspace/linux:/practicas
+            - ../:/practicas
         privileged: true
         stdin_open: true
         tty: true
