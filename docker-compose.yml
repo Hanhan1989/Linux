@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+    ubuntu:
+        container_name: mi_ubuntu
+        build:
+            context: .
+        volumes:
+            - /Users/hanhan/Desktop/workspace/linux:/practicas
+        privileged: true
+        stdin_open: true
+        tty: true
