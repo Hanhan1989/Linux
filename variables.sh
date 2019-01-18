@@ -3,7 +3,7 @@
 # No utilizar espacios junto a un operador de asignación
 # Se evalúa la variable anteponiendo el signo $. Si está en una cadena de string tiene que estar entre comillas "" sino no se evaluará por ejemplo con ''
 # Las comillas `` sirven para ejecutar los comandos primero y luego se asigna. Por ejemplo: lista=`ls *.sh`
-# el comando env lista todas las variables del entorno y set lista todas las variables definidas a nivel local. Podemos eliminar la variable con unset
+# el comando env lista todas las variables del entorno (son variables exportadas, están en todos los shells) y set lista todas las variables definidas a nivel local. Podemos eliminar la variable con unset
 # Usamos $((value1 operador value2)) para hacer operaciones aritmeticas o comparaciones
 
 # Operaciones aritmeticas
