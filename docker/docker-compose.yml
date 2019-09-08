@@ -1,12 +1,13 @@
 version: "3"
 services:
-
     ubuntu:
-        container_name: mi_ubuntu
+        image: mi_ubuntu
+        container_name: ubuntu
         build:
             context: .
         volumes:
             - ../:/practicas
         privileged: true
+        entrypoint: /bin/bash
         stdin_open: true
         tty: true

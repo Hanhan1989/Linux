@@ -1,0 +1,26 @@
+
+Visualcode: Ide actúa como servior. Abre puerto a 9000
+Xdebug: actúa como cliente. Hace conexión al IDE
+
+------------------------------------------------
+
+Desde el contenedor tenemos que saber si se puede conectar al servidor 
+de ese host. 
+
+--------------------------------------------------
+
+¿Cómo podemos conectarnos con los servicios del host desde el contenedor
+del docker ?
+
+MAC: docker.for.mac.host.internal or host.docker.internal
+Windows: docker.for.win.localhost
+Linux: ifconfig (no encontré el nombre que resuelva el ip del host,
+       tomarlo manualmente)
+
+-----------------------------------------------
+
+Una de las herramientas para comprobar es el comando telnet. 
+
+	telnet docker.for.mac.host.internal 9000
+	or 
+	telnet host.docker.internal 9000
