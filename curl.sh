@@ -27,7 +27,13 @@ curl -I http://example.com
 curl --trace-ascii dump http://example.com
 
 #Simular referer
-curl --referer http://www.example.come http://www.example.com
+curl --referer http://www.example.com http://www.example.com
 
 # Descargar contenido del url
 curl example.com -o saved.html
+
+# Listar todas las redirecciones
+curl -v -L http://picasaweb.google.com 2>&1 | grep -E "(Host:|GET)"
+
+# Referencias: 
+- https://curl.haxx.se/docs/manual.html
