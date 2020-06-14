@@ -1,6 +1,10 @@
 #! /bin/bash
 
+# Declaración de array
 nombres=(David Juan Maria Marta Jordi)
+
+# length of an array
+echo ${#nombres[@]}
 
 # Print todos los índices del array
 echo ${nombres[@]}
