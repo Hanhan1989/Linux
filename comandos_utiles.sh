@@ -10,4 +10,8 @@ tail -n [numero] : mostrar x líneas empezando por el final
 
 df -ha: mostrar los espacios de los discos duros
 
-du -h [folder] : mostrar el peso de los ficheros y carpetas. 
+du -h [folder] : mostrar el peso de los ficheros y carpetas recursivamente
+
+du -sh [folder]: mostrar el peso total de una carpeta
+
+df -h . : indicar a qué partición del disco pertenece

@@ -1,0 +1,7 @@
+umask es un comando para establecer permiso predeterminado de archivo para todos los archivos  y directorios que cree. 
+
+umask 000 : rw-rw-rw (666) para archivos y rwxrwxrwx (777) para directorios. 
+
+Ej: umask 022 --> archivos 644 y carpetas 755
+
+Esto es resultado de restar 666 - 022 y 777 -022
