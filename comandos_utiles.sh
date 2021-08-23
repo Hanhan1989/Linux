@@ -12,6 +12,8 @@ df -ha: mostrar los espacios de los discos duros
 
 du -h [folder] : mostrar el peso de los ficheros y carpetas recursivamente
 
+du -sh -- * : mostrar el peso de los ficheros y carpetas de la carpeta actual
+
 du -sh [folder]: mostrar el peso total de una carpeta
 
 df -h . : indicar a qué partición del disco pertenece
@@ -31,3 +33,6 @@ systemctl status service: Shows the status of a service. Tells whether a service
 systemctl enable service:  Turns the service on, on the next reboot or on the next start event. It persists after reboot.
 
 systemctl disable service: Turns the service off on the next reboot or on the next stop event. It persists after reboot.
+
+xdg-open . : abrir la carpeta actual
+xdg-open [filename] : abrir el fichero actual
