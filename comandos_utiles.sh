@@ -35,4 +35,7 @@ systemctl enable service:  Turns the service on, on the next reboot or on the ne
 systemctl disable service: Turns the service off on the next reboot or on the next stop event. It persists after reboot.
 
 xdg-open . : abrir la carpeta actual
+
 xdg-open [filename] : abrir el fichero actual
+
+inotifywait [path directory] --recursive --monitor : monitorear recursivamente la carpeta y subcarpetas 
