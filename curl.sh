@@ -19,6 +19,8 @@ curl -X POST --data "param1=value1&param2=value2"  localhost/submitform.php
 #Al leer un archivo, -d eliminará el retorno de carro y las nuevas líneas. Use --data-binary si desea que curl lea y use el archivo dado en binario exactamente como se indica:
 curl -H "Content-Type: application/json" -XPOST "localhost/submitform.php" --data-binary "@accounts.json"
 
+#Comprobar qué métodos de HTTP es permitido
+curl -X OPTIONS example.com -i 
 
 # Mostrar header respuesta
 curl -I http://example.com
