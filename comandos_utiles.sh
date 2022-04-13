@@ -43,3 +43,5 @@ inotifywait [path directory] --recursive --monitor : monitorear recursivamente l
 grep -R -B 1 -A 1 -i "[palabra a buscar]" [path directory] : buscar palabra con una línea por arriba y abajo de forma recursiva sin tener en cuenta las mayúsclas 
 
 httpry -i [interfaz red] : monitorear peticiones, respuestas, entrantes y salientes. Se puede saber la interfaz con ifconfig y nuestro ip del ordenador con hostname -I
+
+find [directory_name] -type f -name "*.phtml": buscar todos los ficheros con la extensión .phtml
